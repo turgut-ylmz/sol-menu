@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Document</title>
+    <style>
+      /* * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      } */
+      .container {
+        width: 225px;
+        height: 200px;
+        background-color: #3F3F3F;
+      }
+      .menu {
+        transform: translateX(-150px);
+        background-color: #DC8F14;
+        width: 175px;
+        height: auto;
+        height: 200px;
+        transition: transform 2s;
+      }
+      .üst {
+        background-color: #935F0D;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 40px;
+      }
+      .üst h5 {
+        color: #fff;
+        margin: auto;
+        font-size: 1rem;
+      }
+      .üst i {
+        font-size: 30px;
+        position: relative;
+        right: 5px;
+        cursor: pointer;
+        transition: transform 2s;
+      }
+      .alt ul {
+        position: relative;
+        right: 10px;
+      }
+      .alt ul li {
+        list-style: none;
+      }
+      .menu:hover {
+        transform: translateX(0px);
+        cursor: pointer;
+        /* position: relative;
+        left: 200px; */
+      }
+      .menu:hover .fa-angle-right {
+        transform: rotateY(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="üst">
+          <h5>MENÜ</h5>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="alt">
+          <ul>
+            <li>Ana Sayfa</li>
+            <li>Ürünler</li>
+            <li>Hakkımızda</li>
+            <li>İletişim</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
